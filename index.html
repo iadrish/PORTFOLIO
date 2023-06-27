@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrish Bhattacharya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="IMAGES/Adrish.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web developer/Designer</p>
+                <h1>Hi, I'm <span>Adrish</span> Bhattacharya<br> From Kolkata</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="IMAGES/IMG20211230081237 (1).jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I am Adrish Bhattacharya. A Third Year Undergraduate in
+                        Computer Science Engineering at Institute Of Engineering and Management,Kolkata. 
+                        I am an Eager and inquisitive learner. I love to solve new problems.
+                        My interests include  Web Development and Machine Learning. 
+                        I have basic Knowledge of Programming languages like C++,C and Python. </p>
+
+                  <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                     <p class="tab-links" onclick="opentab('services')">Services</p>
+                     <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                  </div>
+                  <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                       <li><span>Languages</span><br>C,C++,PYTHON,SQL</li> 
+                       <li><span>Web Tools</span><br>HTML,CSS, JAVASCRIPT</li> 
+                       <li><span>Libraries</span><br>NUMPY,PANDAS,SCIPY</li> 
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="services">
+                    <ul>
+                    <li><span>UI/UX</span><br>Designing Web Interfaces</li> 
+                       <li><span>Web Development</span><br>Designing And Building Websites</li> 
+                       <li><span>Machine Learning</span><br>Working with ML Models</li>
+                       </ul>
+                                           
+                  </div>               
+                  <div class="tab-contents" id="education">
+                    <ul>
+                       <li><span>Modern English Academy-Barrackpore</span><br>ICSE-96.8%</li> 
+                       <li><span>Bholananda National Vidyalaya-Barrackpore</span><br>CBSE-87.4%</li> 
+                       <li><span>Institute of Engineering And Management-Kolkata</span><br>5th Sem- 9.58(AGG)</li> 
+                    </ul>
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-------services-------------------->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I also love to design interactive WebPages.I have worked in various Ui Frameworks including REACT JS , 
+                        Bootstrap and component libraries like Material UI </p>
+                        <a href="https://github.com/iadrish">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Web Development</h2>
+                    <p>I Love to develop Web Pages and have a great interest in Web Development. </p>
+                        <a href="https://github.com/iadrish">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Machine Learning</h2>
+                    <p>I also have basic Knowledge of Machine learning and would love to contribute. </p>
+                        <a href="https://github.com/iadrish">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-----------------------Portfolio--------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="IMAGES/a8879Lp_460s.jpg" alt="">
+                    <div class="layer">
+                        <h3>MOVIES FLIX</h3>
+                        <p>A Front End Application used to reccomend movies, TV Shows
+                             based on Current IMDB ratings </p>
+                             <a href="https://github.com/iadrish/MOVIES_FLIX"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="IMAGES/Dictionary.png" alt="">
+                    <div class="layer">
+                        <h3>DICTIONARY</h3>
+                        <p>A Front End Application used to Find meanings of words as 
+                            in a dictionary built using Rapid-API,HTML,CSS,JS </p>
+                             <a href="https://github.com/iadrish/DICTIONARY-APP-USING-RAPID-API"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="IMAGES/weather-app-screen-interface-vector.jpg" alt="">
+                    <div class="layer">
+                        <h3>WEATHER GO</h3>
+                        <p>A simple and responsive Weather web app built using HTML and Javascript. It utilises Weather by API Ninjas(A RAPID API) to 
+                            fetch (Max/Min)Temperature, Weather, Humidity Wind Speed Cloud PCT details                            </p>
+                             <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/iadrish?tab=repositories" class="btn">See More</a>
+        </div>
+
+    </div>
+    <!---------------------------contact-------------------------------->
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact-Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>adrishratul@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7439956164</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/adrish.bhattacharya.754/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/AdrishBhattach4"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://github.com/iadrish"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/adrish-bhattacharya-2a536a205/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="IMAGES/Adrish-Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Adrish. Made with <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
